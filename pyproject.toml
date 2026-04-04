@@ -1,0 +1,28 @@
+[project]
+name = "sd-turbo-local"
+version = "0.1.0"
+description = "Fast local image generator using SD-Turbo, optimized for 4GB VRAM laptops."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "accelerate",
+    "diffusers",
+    "gradio",
+    "peft",
+    "torch",
+    "torchvision",
+    "transformers",
+    "fastapi",
+    "uvicorn",
+]
+
+[tool.uv]
+# This ensures that uv automatically fetches the PyTorch version optimized for NVIDIA GPUs (CUDA 12.1)
+[[tool.uv.index]]
+name = "pytorch-cu121"
+url = "https://download.pytorch.org/whl/cu121"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu121" }
+torchvision = { index = "pytorch-cu121" }

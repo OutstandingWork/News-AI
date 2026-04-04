@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.venv/
+venv/
+ENV/
+
+# Logs
+*.log
+app.log
+sd_turbo.log
+news_app.log
+news_app_8502.log
+
+# PIDs
+*.pid
+app.pid
+sd_turbo.pid
+news_app.pid
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+LazyVim/.env
+.streamlit/secrets.toml
+
+# Project Specific
+generated_videos/
+flagged/
+outputs/
+LazyVim/generated_videos/
+LazyVim/.claude/
+
+# uv
+uv.lock

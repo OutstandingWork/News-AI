@@ -1,0 +1,11 @@
+.env
+.claude/
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+.streamlit/secrets.toml
+generated_videos/
